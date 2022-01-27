@@ -143,13 +143,11 @@ public class TP1 {
 				int numero_sorteado = gerador.nextInt(conta_palavra);
 					if(numero_sorteado == 0) {
 						 numero_sorteado = gerador.nextInt(conta_palavra);
+						 palavra_chave = palavras[0][numero_sorteado];
 					}
-				palavra_chave = palavras[0][numero_sorteado];
+				
 				for(int k = 0; k< palavra_chave.length();k++) {
 					palavra_adivinhada = "-";
-					if(acabou==true) {
-						break;
-					}
 					
 					for(int tentativas=1; ; tentativas++) {
 						System.out.println("Tente adivinhar a palavra abaixo, você pode errar até 5 vezes \n");
